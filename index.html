@@ -8,36 +8,39 @@
         body {
             margin: 0;
             padding: 0;
-            background: url('eye.svg') no-repeat center center fixed;
-            background-size: cover;
-            font-family: Arial, sans-serif;
-            color: #ffffff; /* Cambia il colore del testo se necessario */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #fff; /* Colore di sfondo bianco */
         }
 
-        .contenuto {
-            text-align: center;
+        .container {
+            position: relative;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .overlay-text {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-        }
-
-        h1 {
-            font-size: 2.5em;
-            margin: 0;
-        }
-
-        p {
-            font-size: 1.2em;
-            margin: 20px 0 0;
+            color: #fff; /* Colore del testo bianco */
+            font-size: 24px;
+            text-align: center;
+            font-family: Arial, sans-serif; /* Cambia il font se necessario */
         }
     </style>
 </head>
 <body>
-
-    <div class="contenuto">
-        <h1>VISIVO</h1>
+    <div class="container">
+        <img src="eye.svg" alt="Immagine Vettoriale">
+        <div class="overlay-text">VISIVO</div>
     </div>
-
 </body>
 </html>
