@@ -17,23 +17,28 @@
 
         .container {
             position: relative;
+            max-width: 80%; /* Larghezza massima del contenitore */
+            margin: auto; /* Centrare il contenitore */
         }
 
         img {
             display: block;
             max-width: 100%;
             height: auto;
+            border: 10px solid #fff; /* Aggiungi un bordo bianco */
+            border-radius: 10px; /* Aggiungi bordo arrotondato */
         }
 
         .overlay-text {
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
-            color: #fff; /* Colore del testo bianco */
-            font-size: 24px;
+            transform: translate(-50%, -400%);
+            color: #000000; /* Colore del testo nero */
+            font-size: 50px;
             text-align: center;
-            font-family: Arial, sans-serif; /* Cambia il font se necessario */
+            font-family: 'Helvetica', sans-serif; /* Cambia il font a Helvetica */
+            font-weight: bold; /* Imposta il carattere in grassetto */
         }
     </style>
 </head>
