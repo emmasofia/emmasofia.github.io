@@ -12,17 +12,21 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background-color: #04ff00; /* Colore di sfondo bianco */
+            background-color: #fff; /* Colore di sfondo bianco */
         }
 
         .container {
-            position: static;
-            max-width: 80%; /* Larghezza massima del contenitore */
+            position: relative;
+            width: 80%; /* Larghezza massima del contenitore */
+            height: 80%;
             margin: auto; /* Centra il contenitore */
-            background-color: #fff;
         }
 
         img {
+            position: absolute;
+            left: 50%;
+            top: 15%;
+            transform: translate(-50%, 0%);
             display: block;
             max-width: 100%;
             height: auto;
